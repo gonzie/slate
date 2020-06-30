@@ -16,5 +16,3 @@ RUN apt-get update \
     && apt-get remove -y build-essential \
     && apt-get autoremove -y \
     && rm -rf /var/lib/apt/lists/*
-
-CMD ["bundle", "exec", "middleman", "server", "--watcher-force-polling"]
